@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free movie catalogue for you" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Web Icon -->
+  <link rel="apple-touch-icon" href="./logo-512x512.png" />
+  <link rel="icon" href="./logo32x32.png" />
+
+  <!-- Google Icon -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Manifest -->
+  <link rel="manifest" href="./app.webmanifest" />
+
+  <!-- Font Awasome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous" />
+
+  <title>Dapur Mefa</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <a href="#maincontent" class="skip-link">Menuju ke konten</a>
+  <header class="app-bar">
+    <div class="app-bar__menu">
+      <button id="hamburgerButton">☰</button>
+    </div>
+    <div class="app-bar__brand">
+      <h1>Dapur Mefa.</h1>
+    </div>
+    <nav id="navigationDrawer" class="app-bar__navigation">
+      <ul>
+        <li><a href="#/home">Restaurant</a></li>
+        <li><a href="#/favorite">Favorite</a></li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/mohammad-jindan-dubbay-al-faresh-7416a7261/"
+            rel="noopener">About Us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Akhir Navbar -->
+
+  <!-- Hero Section -->
+  <picture>
+    <source media="(max-width: 600px)" srcset="./hero/hero-image_3-mobile.jpg" class="responsive lazyload" />
+    <source media="(min-width: 601px)" srcset="./hero/hero-image_3-desktop.jpg" class="responsive lazyload" />
+    <img src="./hero/hero-image_3-desktop.jpg" alt=" " class="responsive lazyload" loading="lazy" />
+  </picture>
+  <!-- Akhir Hero Section -->
+
+  <!-- Daftar Restoran -->
+  <main id="mainContent" tabindex="0"></main>
+  <!-- Akhir Daftar Restoran -->
+
+  <!-- Footer -->
+  <footer>
+    <div id="footerTools">
+      <button id="subscribePushNotification" class="btn">
+        Subscribe Push Notification
+      </button>
+      <button id="unsubscribePushNotification" class="btn">
+        Unsubscribe Push Notification
+      </button>
+    </div>
+    <p>Copyright © 2023 - Dapur Mefa</p>
+  </footer>
+  <!-- Akhir Footer -->
+
+  <div class="loading"></div>
+</body>
+
+</html>
